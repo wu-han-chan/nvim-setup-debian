@@ -1,0 +1,11 @@
+#!/bin/sh
+# affix colons on either side of $PATH to simplify matching
+case ":${PATH}:" in
+    *:"$HOME/.yarn/bin":*)
+        ;;
+    *)
+        # Prepending path in case a system-installed yarn needs to be overridden
+        export PATH="$HOME/.yarn/bin:$PATH"
+        ;;
+esac
+
