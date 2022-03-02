@@ -1,10 +1,14 @@
 A script (+ init.vim file) that helps with fast setup for nvim/python "ide".
 
-This script should be installed with the command below.
+This script should be installed with the command below:
+
+------
 
 curl -o nvim_setup.sh https://raw.githubusercontent.com/wu-han-chan/nvim-setup-debian/main/nvim_setup.sh \
  && chmod +x nvim_setup.sh \
  &&  . ./nvim_setup.sh
+ 
+------
 
 If you do plan on executing it some other way make sure to run it as
 
